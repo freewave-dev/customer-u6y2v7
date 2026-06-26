@@ -3,209 +3,206 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Lower Tavern — Orcas Island's Iconic Pub Since 1994</title>
-<meta name="description" content="The Lower Tavern is a beloved pub and restaurant in Eastsound on Orcas Island. American pub fare, craft burgers, cold beer, open mic, trivia & karaoke nights. Open daily 11am–11pm.">
+<title>The Lower Tavern — Sports Tavern on Orcas Island</title>
+<meta name="description" content="The Lower Tavern is a laid-back neighborhood sports tavern on beautiful Orcas Island. Good food, cold drinks, every game, and great company. Eastsound, WA.">
+<meta property="og:title" content="The Lower Tavern — Sports Tavern on Orcas Island">
+<meta property="og:description" content="Good food. Cold drinks. Great company. That's the Lower. Your neighborhood sports tavern on Orcas Island.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="topbar">
-  <div class="topbar-inner">
-    <div class="left">Eastsound, Orcas Island, WA</div>
-    <div class="right">Open Today 11:00 AM &mdash; 11:00 PM <span class="sep">|</span> <a href="tel:+13603763955">360.376.3955</a></div>
-  </div>
-</div>
-
-<header class="nav">
+<!-- ===== NAV ===== -->
+<header class="nav" id="top">
   <div class="nav-inner">
-    <a href="index.html" class="brand">The Lower <span class="brand-mark">Tavern</span></a>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="visit.html">Visit</a></li>
-      </ul>
+    <a href="#top" class="brand">
+      <img src="https://media.freewave.dev/u6y2v7/images/lower-tavern-logo.webp" alt="The Lower Tavern — Orcas Island" class="brand-logo">
+    </a>
+    <nav class="nav-menu" id="navMenu">
+      <a href="#top" class="active">Home</a>
+      <a href="#food">Food &amp; Drink</a>
+      <a href="#sports">Watch Sports</a>
+      <a href="#events">Events</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <a href="menu.html" class="nav-cta">See the Menu</a>
+    <a href="#food" class="btn-order">Order Online</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
+<!-- ===== HERO ===== -->
 <section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
   <div class="hero-inner">
     <div class="hero-content">
-      <div class="eyebrow fade-up">Eastsound, Orcas Island &mdash; Est. 1994</div>
-      <h1 class="display fade-up d-1">The Lower <em>Tavern</em></h1>
-      <p class="hero-tag fade-up d-2">Burgers, cold beer, and live nights on Prune Alley. The island's most well-worn barstools, since 1994.</p>
-      <div class="hero-actions fade-up d-3">
-        <a href="menu.html" class="btn btn-primary">Browse the Menu</a>
-        <a href="visit.html" class="btn btn-ghost">Plan a Visit</a>
-      </div>
-      <div class="hero-meta fade-up d-4">
-        <span><span class="dot"></span>American Pub Fare</span>
-        <span><span class="dot"></span>Live Music</span>
-        <span><span class="dot"></span>Dog-Friendly Patio</span>
-      </div>
-    </div>
-  </div>
-  <div class="scroll-hint">Scroll<span class="line"></span></div>
-</section>
-
-<section class="section-light">
-  <div class="container">
-    <div class="story">
-      <div class="story-text">
-        <span class="eyebrow">Our Story</span>
-        <h2 class="display">Three decades of last calls, first dates, and second helpings.</h2>
-        <p>The Lower Tavern has been a fixture on Prune Alley since 1994 &mdash; a working pub built on cold beer, hot griddles, and the kind of crowd that knows everyone's name by Wednesday.</p>
-        <p>We're proudly local, proudly loud some nights and proudly quiet on others. Whether you're docking in from the ferry or you've been coming since the original lease, you'll find the same honest plates, the same long bar, and the same low light that's been here all along.</p>
-        <div class="stats">
-          <div>
-            <div class="stat-num">30+</div>
-            <div class="stat-label">Years on Prune Alley</div>
-          </div>
-          <div>
-            <div class="stat-num">11&ndash;11</div>
-            <div class="stat-label">Open Daily</div>
-          </div>
-          <div>
-            <div class="stat-num">3</div>
-            <div class="stat-label">Live Nights / Week</div>
-          </div>
-        </div>
-      </div>
-      <div class="story-image">
-        <img src="https://media.freewave.dev/u6y2v7/images/unsplash-4f32441961ec.webp" alt="Warm interior of a wood-paneled pub at golden hour">
-      </div>
+      <h1 class="hero-title">
+        <span>Good Food.</span>
+        <span>Cold Drinks.</span>
+        <span>Great Company.</span>
+        <span class="accent">That's the Lower.</span>
+      </h1>
+      <p class="hero-tag">Your neighborhood sports tavern on beautiful Orcas Island.</p>
+      <a href="#food" class="btn btn-primary">View Menu</a>
     </div>
   </div>
 </section>
 
-<section class="section-darker">
+<!-- ===== FEATURE STRIP ===== -->
+<section class="strip" id="sports">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">From the Kitchen</span>
-      <h2 class="display">House favorites</h2>
-      <p>The plates that made us. Simple, generous, and worth the ferry ride.</p>
+    <div class="strip-grid">
+      <div class="strip-item">
+        <span class="strip-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="13" rx="1.5"/><path d="M8 21h8M12 17v4"/></svg>
+        </span>
+        <h3>Catch Every Game</h3>
+        <p>Multiple TVs, all the sports, every day.</p>
+      </div>
+      <div class="strip-item">
+        <span class="strip-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 11h18a8 8 0 0 0-18 0Z"/><path d="M3 15h18M5 19h14"/></svg>
+        </span>
+        <h3>Delicious Food</h3>
+        <p>Burgers, wings, local favorites &amp; more.</p>
+      </div>
+      <div class="strip-item">
+        <span class="strip-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 11h9v6a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4v-6Z"/><path d="M15 12h2.5a2.5 2.5 0 0 1 0 5H15"/><path d="M8 7V4M11 7V5M14 7V4"/></svg>
+        </span>
+        <h3>Ice Cold Drinks</h3>
+        <p>Local brews, classic cocktails, and more.</p>
+      </div>
+      <div class="strip-item">
+        <span class="strip-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.2"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0M15 19a4 4 0 0 1 5.5-3.7"/></svg>
+        </span>
+        <h3>Good Times</h3>
+        <p>Friendly faces and a welcoming atmosphere.</p>
+      </div>
     </div>
-    <div class="feature-grid">
-      <article class="feature">
-        <div class="feature-img"><img src="https://media.freewave.dev/u6y2v7/images/unsplash-0e5f21d1137a.webp" alt="Stacked smash burger with cheddar and pickles"></div>
-        <div class="feature-body">
-          <h3>The Lower Burger</h3>
-          <p>Double smash patty, aged cheddar, house pickles, special sauce on a brioche bun. Comes with hand-cut fries.</p>
-          <span class="feature-price">$17</span>
+  </div>
+</section>
+
+<!-- ===== LOCALS / ABOUT ===== -->
+<section class="locals" id="about">
+  <div class="container locals-grid">
+    <div class="locals-text" id="food">
+      <h2 class="section-title">A Locals' Spot.<br>A Visitors' Must.</h2>
+      <p>The Lower Tavern is where Orcas Islanders and visitors come together for great food, cold drinks, and the games we all love. Pull up a stool, settle in, and stay a while.</p>
+      <p>Three decades on the island and still the easiest place to find a friendly face, a cold pint, and whatever game happens to be on.</p>
+      <a href="#contact" class="btn btn-outline">About Us</a>
+    </div>
+    <div class="locals-image">
+      <img src="https://media.freewave.dev/u6y2v7/images/unsplash-0e5f21d1137a.webp" alt="Stacked smash burger with fries and a cold beer">
+    </div>
+  </div>
+</section>
+
+<!-- ===== UPCOMING EVENTS ===== -->
+<section class="events" id="events">
+  <div class="container">
+    <div class="events-head">
+      <h2 class="section-title light">Upcoming Events</h2>
+      <a href="#contact" class="btn btn-ghost-light">View All Events</a>
+    </div>
+    <div class="events-row">
+      <article class="event-card">
+        <div class="event-thumb"><img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=600&q=80" alt="Live band performing on stage"></div>
+        <div class="event-date"><span class="m">May</span><span class="d">24</span></div>
+        <div class="event-body">
+          <h3>Live Music</h3>
+          <p class="event-sub">The Island Strummers</p>
+          <p class="event-time">Saturday, May 24 · 7PM</p>
         </div>
       </article>
-      <article class="feature">
-        <div class="feature-img"><img src="https://media.freewave.dev/u6y2v7/images/unsplash-2948a6efa5fd.webp" alt="Crispy golden fish and chips with lemon"></div>
-        <div class="feature-body">
-          <h3>Pacific Fish &amp; Chips</h3>
-          <p>Local cod in a crisp beer batter, malt vinegar, lemon, tartar &mdash; piled on hand-cut fries.</p>
-          <span class="feature-price">$22</span>
+      <article class="event-card">
+        <div class="event-thumb"><img src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=600&q=80" alt="Football on the field under the lights"></div>
+        <div class="event-date"><span class="m">May</span><span class="d">25</span></div>
+        <div class="event-body">
+          <h3>NFL Sunday Ticket</h3>
+          <p class="event-sub">Every game, every screen</p>
+          <p class="event-time">Every Sunday · All Day</p>
         </div>
       </article>
-      <article class="feature">
-        <div class="feature-img"><img src="https://images.unsplash.com/photo-1571767454098-246b94fbcf02?auto=format&fit=crop&w=900&q=80" alt="Pint of amber beer in a glass on a wooden bar"></div>
-        <div class="feature-body">
-          <h3>Island Drafts</h3>
-          <p>Twelve rotating taps featuring San Juan and Pacific Northwest brewers. Ask the bar what's fresh.</p>
-          <span class="feature-price">From $6</span>
+      <article class="event-card">
+        <div class="event-thumb"><img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=600&q=80" alt="Microphone on a lit stage"></div>
+        <div class="event-date"><span class="m">May</span><span class="d">30</span></div>
+        <div class="event-body">
+          <h3>Karaoke Night</h3>
+          <p class="event-sub">Sing your heart out!</p>
+          <p class="event-time">Friday, May 30 · 8PM</p>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="event-thumb"><img src="https://images.unsplash.com/photo-1546608235-3310a2494cdf?auto=format&fit=crop&w=600&q=80" alt="Dartboard with darts in the bullseye"></div>
+        <div class="event-date"><span class="m">Jun</span><span class="d">07</span></div>
+        <div class="event-body">
+          <h3>Dart Tournament</h3>
+          <p class="event-sub">Double Elimination</p>
+          <p class="event-time">Saturday, June 7 · 2PM</p>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<section class="quote-band">
-  <blockquote>
-    &ldquo;A burger, a pint, and a barstool at the Lower &mdash; that's the whole point of coming to Orcas.&rdquo;
-    <cite>&mdash; A Regular, Since '97</cite>
-  </blockquote>
-</section>
-
-<section>
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">What's On</span>
-      <h2 class="display">Live nights on Prune Alley</h2>
-      <p>Three nights a week the Tavern stays loud. Show up early; seats go fast.</p>
+<!-- ===== FOOTER ===== -->
+<footer class="footer" id="contact">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="https://media.freewave.dev/u6y2v7/images/lower-tavern-logo.webp" alt="The Lower Tavern" class="footer-logo">
+      <p>A laid-back sports tavern serving up good food, cold drinks, and good times on beautiful Orcas Island.</p>
+      <div class="socials">
+        <a href="#contact" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12Z"/></svg></a>
+        <a href="#contact" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      </div>
     </div>
-    <div class="events-grid">
-      <div class="event-card">
-        <div class="event-day">Tuesdays</div>
-        <h3>Trivia Night</h3>
-        <div class="event-time">8:00 PM &mdash; 10:00 PM</div>
-        <p>Five rounds, no phones, free to play. Top team takes home a gift card and bragging rights for the week.</p>
-      </div>
-      <div class="event-card">
-        <div class="event-day">Thursdays</div>
-        <h3>Open Mic</h3>
-        <div class="event-time">7:30 PM &mdash; Late</div>
-        <p>Acoustic, electric, spoken word &mdash; all welcome. Sign-up at the bar starting 6 PM.</p>
-      </div>
-      <div class="event-card">
-        <div class="event-day">Saturdays</div>
-        <h3>Karaoke</h3>
-        <div class="event-time">9:00 PM &mdash; 12:00 AM</div>
-        <p>The biggest book on Orcas, hosted live. Two-drink minimum, zero judgment.</p>
-      </div>
+    <div class="footer-col">
+      <h4>Location</h4>
+      <p>49 Stags Street<br>Eastsound, WA 98245</p>
+      <a href="https://maps.google.com/?q=The+Lower+Tavern+Eastsound+WA" class="footer-link" target="_blank" rel="noopener">Get Directions →</a>
+    </div>
+    <div class="footer-col">
+      <h4>Hours</h4>
+      <p class="hours-row"><span>Mon &ndash; Thu</span><span>11AM &ndash; 11PM</span></p>
+      <p class="hours-row"><span>Fri &ndash; Sat</span><span>11AM &ndash; 12AM</span></p>
+      <p class="hours-row"><span>Sunday</span><span>10AM &ndash; 10PM</span></p>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p><a href="tel:+13603765693" class="footer-link">(360) 376-LOWER</a></p>
+      <p><a href="mailto:cheers@lowertavern.com" class="footer-link">cheers@lowertavern.com</a></p>
     </div>
   </div>
-</section>
-
-<section class="section-light">
-  <div class="container">
-    <div class="visit">
-      <div class="visit-image">
-        <img src="https://media.freewave.dev/u6y2v7/images/unsplash-d6b3d0390f4e.webp" alt="Cozy pub with warm lighting and stools at the bar">
-      </div>
-      <div class="visit-card">
-        <span class="eyebrow">Visit Us</span>
-        <h2 class="display">Find your stool.</h2>
-        <div class="info-row"><span class="day">Mon &mdash; Sun</span><span class="hours">11:00 AM &mdash; 11:00 PM</span></div>
-        <div class="info-row"><span class="day">Kitchen</span><span class="hours">Closes 10:00 PM</span></div>
-        <div class="info-row"><span class="day">Late Night</span><span class="hours">Bar &amp; Snacks 'til Close</span></div>
-        <div class="address-block">
-          <p><strong style="color:var(--cream)">46 Prune Alley</strong><br>Eastsound, WA 98245<br>Orcas Island</p>
-          <p style="margin-top:1rem"><a href="tel:+13603763955">360.376.3955</a> &middot; <a href="visit.html">Get Directions</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="brand">The Lower <span class="brand-mark">Tavern</span></div>
-        <p>An iconic Orcas Island pub on Prune Alley. Burgers, beer, and live nights since 1994.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="visit.html">Visit</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Visit</h4>
-        <p>46 Prune Alley<br>Eastsound, WA 98245<br>Orcas Island</p>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p><a href="tel:+13603763955">360.376.3955</a><br><a href="mailto:hello@lowertavern.com">hello@lowertavern.com</a></p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div>&copy; 1994 &mdash; 2026 The Lower Tavern. All rights reserved.</div>
-      <div>21+ &middot; Please drink responsibly</div>
-    </div>
+  <div class="footer-bottom container">
+    <div>&copy; 2026 The Lower Tavern &nbsp;|&nbsp; Orcas Island, WA</div>
+    <div class="footer-legal"><a href="#contact">Privacy Policy</a><a href="#contact">Terms</a></div>
   </div>
 </footer>
+
+<script>
+  // Mobile nav toggle
+  var t = document.getElementById('navToggle'), m = document.getElementById('navMenu');
+  t.addEventListener('click', function () {
+    var open = document.body.classList.toggle('nav-open');
+    t.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  m.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') { document.body.classList.remove('nav-open'); t.setAttribute('aria-expanded', 'false'); }
+  });
+  // Solid nav after scroll
+  var nav = document.getElementById('top');
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 40) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+  });
+</script>
 
 </body>
 </html>
