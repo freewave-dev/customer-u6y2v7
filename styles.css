@@ -245,6 +245,7 @@ img { display: block; max-width: 100%; }
 .menu-cat-note { font-size: .82rem; color: var(--muted); font-style: italic; margin: -.1rem 0 .2rem; }
 .menu-clip { position: relative; max-height: 232px; overflow: hidden; transition: max-height .45s ease; }
 .menu-cat.open .menu-clip { max-height: 1600px; }
+.menu-cat.full .menu-clip { max-height: none; }
 .menu-items { list-style: none; }
 .menu-items li { padding: .85rem 0; border-bottom: 1px solid var(--line); }
 .mi-row { display: flex; align-items: baseline; gap: .5rem; }
