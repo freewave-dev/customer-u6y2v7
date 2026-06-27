@@ -74,14 +74,14 @@
       </div>
       <div class="strip-item">
         <span class="strip-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 11h18a8 8 0 0 0-18 0Z"/><path d="M3 15h18M5 19h14"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
         </span>
         <h3>Delicious Food</h3>
         <p>Burgers, wings, local favorites &amp; more.</p>
       </div>
       <div class="strip-item">
         <span class="strip-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 11h9v6a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4v-6Z"/><path d="M15 12h2.5a2.5 2.5 0 0 1 0 5H15"/><path d="M8 7V4M11 7V5M14 7V4"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 8.5h9.5V19a2 2 0 0 1-2 2H8.5a2 2 0 0 1-2-2V8.5Z"/><path d="M16 11h2a2.2 2.2 0 0 1 2.2 2.2v1.6A2.2 2.2 0 0 1 18 17h-2"/><path d="M6.7 8.6A2 2 0 0 1 7 4.7 2.3 2.3 0 0 1 10.8 3.6 2.2 2.2 0 0 1 14.7 4.5 1.9 1.9 0 0 1 16 8.5"/><path d="M9.8 11.5v6M12.8 11.5v6"/></svg>
         </span>
         <h3>Ice Cold Drinks</h3>
         <p>Local brews, classic cocktails, and more.</p>
@@ -100,7 +100,7 @@
 <!-- ===== LOCALS / ABOUT ===== -->
 <section class="locals" id="about">
   <div class="container locals-grid">
-    <div class="locals-text" id="food">
+    <div class="locals-text">
       <h2 class="section-title">A Locals' Spot.<br>A Visitors' Must.</h2>
       <p>The Lower Tavern is where Orcas Islanders and visitors come together for great food, cold drinks, and the games we all love. Pull up a stool, settle in, and stay a while.</p>
       <p>Three decades on the island and still the easiest place to find a friendly face, a cold pint, and whatever game happens to be on.</p>
@@ -108,6 +108,84 @@
     </div>
     <div class="locals-image">
       <img src="https://media.freewave.dev/u6y2v7/images/unsplash-0e5f21d1137a.webp" alt="Stacked smash burger with fries and a cold beer">
+    </div>
+  </div>
+</section>
+
+<!-- ===== MENU ===== -->
+<section class="menu" id="food">
+  <div class="container">
+    <div class="section-head menu-head">
+      <span class="eyebrow">Food &amp; Drink</span>
+      <h2 class="section-title">The Menu</h2>
+      <p>Tavern classics done right — burgers off the griddle, baskets, and a bar that's always pouring. Tap a category to see the full list.</p>
+    </div>
+    <div class="menu-grid">
+
+      <div class="menu-cat">
+        <h3 class="menu-cat-title">Shareables &amp; Wings</h3>
+        <div class="menu-clip">
+          <ul class="menu-items">
+            <li><div class="mi-row"><span class="mi-name">Tavern Wings</span><span class="mi-dots"></span><span class="mi-price">$14</span></div><p class="mi-desc">Buffalo, BBQ, or dry rub — ranch or blue cheese.</p></li>
+            <li><div class="mi-row"><span class="mi-name">Loaded Nachos</span><span class="mi-dots"></span><span class="mi-price">$13</span></div><p class="mi-desc">House chips, cheddar, jalapeños, pico, sour cream.</p></li>
+            <li><div class="mi-row"><span class="mi-name">Soft Pretzel Sticks</span><span class="mi-dots"></span><span class="mi-price">$11</span></div><p class="mi-desc">Warm and salted with house beer-cheese dip.</p></li>
+            <li><div class="mi-row"><span class="mi-name">Crispy Calamari</span><span class="mi-dots"></span><span class="mi-price">$15</span></div><p class="mi-desc">Lightly breaded, served with lemon aioli.</p></li>
+            <li><div class="mi-row"><span class="mi-name">Fried Pickles</span><span class="mi-dots"></span><span class="mi-price">$10</span></div><p class="mi-desc">Dill spears, crisp-fried, cajun ranch.</p></li>
+            <li><div class="mi-row"><span class="mi-name">Chips &amp; Salsa</span><span class="mi-dots"></span><span class="mi-price">$8</span></div><p class="mi-desc">House-made daily. Add guac $3.</p></li>
+          </ul>
+          <div class="menu-fade"></div>
+        </div>
+        <button class="menu-more" type="button">See full list</button>
+      </div>
+
+      <div class="menu-cat">
+        <h3 class="menu-cat-title">Burgers &amp; Handhelds</h3>
+        <div class="menu-clip">
+          <ul class="menu-items">
+            <li><div class="mi-row"><span class="mi-name">The Lower Burger</span><span class="mi-dots"></span><span class="mi-price">$17</span></div><p class="mi-desc">Double smash patty, cheddar, house sauce, fries.</p></li>
+            <li><div class="mi-row"><span class="mi-name">Bacon Bleu Burger</span><span class="mi-dots"></span><span class="mi-price">$18</span></div><p class="mi-desc">Bleu cheese, bacon, caramelized onion.</p></li>
+            <li><div class="mi-row"><span class="mi-name">Crispy Chicken Sandwich</span><span class="mi-dots"></span><span class="mi-price">$16</span></div><p class="mi-desc">Buttermilk-fried, slaw, pickles, brioche.</p></li>
+            <li><div class="mi-row"><span class="mi-name">Island Fish Sandwich</span><span class="mi-dots"></span><span class="mi-price">$17</span></div><p class="mi-desc">Beer-battered cod, tartar, lettuce, tomato.</p></li>
+            <li><div class="mi-row"><span class="mi-name">Pulled Pork Melt</span><span class="mi-dots"></span><span class="mi-price">$16</span></div><p class="mi-desc">Smoked pork, cheddar, griddled sourdough.</p></li>
+            <li><div class="mi-row"><span class="mi-name">Garden Veggie Burger</span><span class="mi-dots"></span><span class="mi-price">$15</span></div><p class="mi-desc">House black-bean patty, avocado, sprouts.</p></li>
+          </ul>
+          <div class="menu-fade"></div>
+        </div>
+        <button class="menu-more" type="button">See full list</button>
+      </div>
+
+      <div class="menu-cat">
+        <h3 class="menu-cat-title">Mains &amp; Baskets</h3>
+        <div class="menu-clip">
+          <ul class="menu-items">
+            <li><div class="mi-row"><span class="mi-name">Fish &amp; Chips</span><span class="mi-dots"></span><span class="mi-price">$22</span></div><p class="mi-desc">Beer-battered Pacific cod, fries, house slaw.</p></li>
+            <li><div class="mi-row"><span class="mi-name">Tender Basket</span><span class="mi-dots"></span><span class="mi-price">$15</span></div><p class="mi-desc">Crispy chicken tenders &amp; hand-cut fries.</p></li>
+            <li><div class="mi-row"><span class="mi-name">Baja Fish Tacos</span><span class="mi-dots"></span><span class="mi-price">$18</span></div><p class="mi-desc">Three, cabbage slaw, chipotle crema.</p></li>
+            <li><div class="mi-row"><span class="mi-name">Three-Cheese Mac</span><span class="mi-dots"></span><span class="mi-price">$14</span></div><p class="mi-desc">Baked, golden crumb. Add bacon $3.</p></li>
+            <li><div class="mi-row"><span class="mi-name">Tavern Caesar</span><span class="mi-dots"></span><span class="mi-price">$13</span></div><p class="mi-desc">Romaine, parmesan, croutons. Add chicken $6.</p></li>
+            <li><div class="mi-row"><span class="mi-name">Sirloin Steak Bites</span><span class="mi-dots"></span><span class="mi-price">$21</span></div><p class="mi-desc">Garlic butter, fries, grilled bread.</p></li>
+          </ul>
+          <div class="menu-fade"></div>
+        </div>
+        <button class="menu-more" type="button">See full list</button>
+      </div>
+
+      <div class="menu-cat">
+        <h3 class="menu-cat-title">On Tap &amp; Cocktails</h3>
+        <div class="menu-clip">
+          <ul class="menu-items">
+            <li><div class="mi-row"><span class="mi-name">Island Drafts</span><span class="mi-dots"></span><span class="mi-price">From $6</span></div><p class="mi-desc">12 rotating San Juan &amp; PNW taps.</p></li>
+            <li><div class="mi-row"><span class="mi-name">Tavern Old Fashioned</span><span class="mi-dots"></span><span class="mi-price">$12</span></div><p class="mi-desc">Bourbon, bitters, orange, rocks.</p></li>
+            <li><div class="mi-row"><span class="mi-name">Spicy Margarita</span><span class="mi-dots"></span><span class="mi-price">$12</span></div><p class="mi-desc">Tequila, fresh lime, muddled jalapeño.</p></li>
+            <li><div class="mi-row"><span class="mi-name">Orcas Cider</span><span class="mi-dots"></span><span class="mi-price">$7</span></div><p class="mi-desc">Local-pressed, seasonal pour.</p></li>
+            <li><div class="mi-row"><span class="mi-name">House Red / White</span><span class="mi-dots"></span><span class="mi-price">$9</span></div><p class="mi-desc">By the glass, ask your server.</p></li>
+            <li><div class="mi-row"><span class="mi-name">Sodas &amp; N/A</span><span class="mi-dots"></span><span class="mi-price">$4</span></div><p class="mi-desc">Fountain sodas, lemonade, iced tea.</p></li>
+          </ul>
+          <div class="menu-fade"></div>
+        </div>
+        <button class="menu-more" type="button">See full list</button>
+      </div>
+
     </div>
   </div>
 </section>
@@ -207,6 +285,14 @@
   var nav = document.getElementById('top');
   window.addEventListener('scroll', function () {
     if (window.scrollY > 40) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+  });
+  // Expandable menu categories
+  document.querySelectorAll('.menu-more').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var cat = btn.closest('.menu-cat');
+      var open = cat.classList.toggle('open');
+      btn.firstChild.textContent = open ? 'See less ' : 'See full list ';
+    });
   });
 </script>
 
