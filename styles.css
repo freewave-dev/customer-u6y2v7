@@ -373,6 +373,8 @@ img { display: block; max-width: 100%; }
   .hero-order { display: inline-block; }
   .hero-actions { width: 100%; max-width: 360px; gap: .8rem; }
   .hero-actions .btn { flex: 1; text-align: center; padding-left: 1rem; padding-right: 1rem; white-space: nowrap; }
+  /* View Events wraps to its own row; keep it the same width as View Menu, left-aligned */
+  .hero-actions .btn-ghost-light { flex: 0 1 calc(50% - .4rem); }
 
   .strip-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem 1rem; }
   .strip-item:nth-child(2)::after { display: none; }
