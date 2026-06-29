@@ -308,6 +308,14 @@ img { display: block; max-width: 100%; }
 }
 .event-sub { font-size: .9rem; color: rgba(245,239,225,.7); margin-bottom: .55rem; }
 .event-time { font-size: .82rem; color: var(--gold); font-weight: 500; }
+.events-cta { margin-top: 2.8rem; text-align: center; }
+.events-cta p {
+  font-family: 'Oswald', sans-serif; text-transform: uppercase;
+  letter-spacing: .05em; font-size: 1.02rem; color: rgba(245,239,225,.85);
+  margin-bottom: 1.1rem;
+}
+.events-cta .btn span { transition: transform .2s ease; display: inline-block; }
+.events-cta .btn:hover span { transform: translateX(4px); }
 
 /* ===== FOOTER ===== */
 .footer { background: var(--maroon-900); color: rgba(245,239,225,.78); padding: 4rem 0 0; }
