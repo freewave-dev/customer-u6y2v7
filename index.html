@@ -270,8 +270,8 @@
       <a href="#contact" class="btn btn-ghost-light">View All Events</a>
     </div>
     <div class="events-row">
-      <article class="event-card">
-        <div class="event-thumb"><img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=600&q=80" alt="Live band performing on stage"></div>
+      <article class="event-card" data-date="2026-05-24">
+        <div class="event-thumb"><img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=600&q=80" alt="Live band performing on stage" loading="lazy" decoding="async"></div>
         <div class="event-date"><span class="m">May</span><span class="d">24</span></div>
         <div class="event-body">
           <h3>Live Music</h3>
@@ -279,8 +279,8 @@
           <p class="event-time">Saturday, May 24 · 7PM</p>
         </div>
       </article>
-      <article class="event-card">
-        <div class="event-thumb"><img src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=600&q=80" alt="Football on the field under the lights"></div>
+      <article class="event-card" data-date="2026-05-25">
+        <div class="event-thumb"><img src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=600&q=80" alt="Football on the field under the lights" loading="lazy" decoding="async"></div>
         <div class="event-date"><span class="m">May</span><span class="d">25</span></div>
         <div class="event-body">
           <h3>NFL Sunday Ticket</h3>
@@ -288,8 +288,8 @@
           <p class="event-time">Every Sunday · All Day</p>
         </div>
       </article>
-      <article class="event-card">
-        <div class="event-thumb"><img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=600&q=80" alt="Microphone on a lit stage"></div>
+      <article class="event-card" data-date="2026-05-30">
+        <div class="event-thumb"><img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=600&q=80" alt="Microphone on a lit stage" loading="lazy" decoding="async"></div>
         <div class="event-date"><span class="m">May</span><span class="d">30</span></div>
         <div class="event-body">
           <h3>Karaoke Night</h3>
@@ -297,8 +297,8 @@
           <p class="event-time">Friday, May 30 · 8PM</p>
         </div>
       </article>
-      <article class="event-card">
-        <div class="event-thumb"><img src="https://images.unsplash.com/photo-1546608235-3310a2494cdf?auto=format&fit=crop&w=600&q=80" alt="Dartboard with darts in the bullseye"></div>
+      <article class="event-card" data-date="2026-06-07">
+        <div class="event-thumb"><img src="https://images.unsplash.com/photo-1546608235-3310a2494cdf?auto=format&fit=crop&w=600&q=80" alt="Dartboard with darts in the bullseye" loading="lazy" decoding="async"></div>
         <div class="event-date"><span class="m">Jun</span><span class="d">07</span></div>
         <div class="event-body">
           <h3>Dart Tournament</h3>
@@ -364,6 +364,43 @@
       btn.firstChild.textContent = open ? 'See less ' : 'See full list ';
     });
   });
+
+  // Events carousel (mobile): open centered on the next upcoming event.
+  // Past events sit to the left, future events to the right.
+  (function () {
+    var row = document.querySelector('.events-row');
+    if (!row) return;
+    var cards = Array.prototype.slice.call(row.querySelectorAll('.event-card[data-date]'));
+    if (!cards.length) return;
+
+    function dateOf(c) { return new Date(c.getAttribute('data-date') + 'T00:00:00'); }
+
+    function pickTarget() {
+      var today = new Date(); today.setHours(0, 0, 0, 0);
+      var nextUp = null, recentPast = null;
+      cards.forEach(function (c) {
+        var d = dateOf(c);
+        if (d >= today) { if (!nextUp || d < dateOf(nextUp)) nextUp = c; }
+        else { if (!recentPast || d > dateOf(recentPast)) recentPast = c; }
+      });
+      return nextUp || recentPast || cards[0];
+    }
+
+    function center() {
+      // Only when the row is an actual horizontal scroller (mobile layout).
+      if (row.scrollWidth <= row.clientWidth + 4) return;
+      var card = pickTarget();
+      var offset = (card.getBoundingClientRect().left - row.getBoundingClientRect().left) + row.scrollLeft;
+      var left = offset - (row.clientWidth - card.offsetWidth) / 2;
+      row.scrollLeft = Math.max(0, Math.min(left, row.scrollWidth - row.clientWidth));
+    }
+
+    requestAnimationFrame(center);
+    window.addEventListener('load', center);
+    var mq = window.matchMedia('(max-width: 900px)');
+    var onChange = function () { requestAnimationFrame(center); };
+    if (mq.addEventListener) mq.addEventListener('change', onChange); else mq.addListener(onChange);
+  })();
 </script>
 
 </body>
