@@ -317,6 +317,13 @@ img { display: block; max-width: 100%; }
 .events-cta .btn span { transition: transform .2s ease; display: inline-block; }
 .events-cta .btn:hover span { transform: translateX(4px); }
 
+/* ===== DOGGIO ===== */
+.doggio { background: var(--cream-2); padding: 4.5rem 0; }
+.doggio-inner { max-width: 640px; margin: 0 auto; text-align: center; }
+.doggio-inner .section-title { margin-bottom: 1.1rem; }
+.doggio-inner p { color: var(--muted); margin-bottom: .8rem; }
+.doggio-inner p:last-child { margin-bottom: 0; }
+
 /* ===== FOOTER ===== */
 .footer { background: var(--maroon-900); color: rgba(245,239,225,.78); padding: 4rem 0 0; }
 .footer-grid {
@@ -340,6 +347,7 @@ img { display: block; max-width: 100%; }
 .footer-col p { font-size: .92rem; margin-bottom: .5rem; }
 .hours-row { display: flex; justify-content: space-between; gap: 1rem; max-width: 230px; }
 .hours-row span:first-child { color: rgba(245,239,225,.6); }
+.hours-note { font-size: .78rem; font-style: italic; color: rgba(245,239,225,.5); margin-top: .5rem; max-width: 230px; }
 .footer-link { color: var(--cream); text-decoration: none; transition: color .2s ease; }
 .footer-link:hover { color: var(--gold); }
 .footer-col .footer-link { display: inline-block; margin-top: .4rem; font-weight: 500; }
